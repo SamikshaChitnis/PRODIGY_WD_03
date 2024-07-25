@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 3rem;
+    color: white;
+}
+
+h2, p, ul, button, input, #turn-indicator {
+    font-size: 1.5rem;
+    color: white; 
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.mode {
+    display: none;
+}
+
+.game-board {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+}
+
+.cell:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+#reset-button {
+    margin-right: 10px;
+}
+
+#turn-indicator {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
